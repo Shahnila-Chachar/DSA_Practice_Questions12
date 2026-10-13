@@ -4,16 +4,22 @@ class Solution {
         int right = numbers.length-1;
         int left=0;
         while(left<right){
-            if((numbers[right]+numbers[left])==target){
-                indices[0]=left;
-                indices[1]=right;
-                
+            int sum=numbers[right]+numbers[left];
+            if(sum==target){
+                indices[0]=left+1;
+                indices[1]=right+1;
+                return indices;
             }
-            left++;
-            right--;
+            if(sum>target){
+                right--;
+            }
+            if(sum<target){
+                left++;
+            }
+            
             
         }
-        return indices;
+        return null;
         
     }
 }
