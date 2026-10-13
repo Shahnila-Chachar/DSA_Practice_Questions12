@@ -7,8 +7,9 @@ class Solution {
                     indices[0]=i+1;
                     indices[1]=j+1;
                 }
-                return indices;
+                
             }
+            return indices;
         }
         return null;
     }
