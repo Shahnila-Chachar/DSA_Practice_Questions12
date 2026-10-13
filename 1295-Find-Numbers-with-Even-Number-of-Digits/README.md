@@ -43,8 +43,6 @@ Only 1771 contains an even number of digits.
 ## Solution
 
 - **Language**: Java
-- **Runtime**: 0 ms
-- **Memory**: 42.5 MB
 
 ---
 
