@@ -44,7 +44,7 @@ Only 1771 contains an even number of digits.
 
 - **Language**: Java
 - **Runtime**: 0 ms
-- **Memory**: 42.4 MB
+- **Memory**: 42.5 MB
 
 ---
 
