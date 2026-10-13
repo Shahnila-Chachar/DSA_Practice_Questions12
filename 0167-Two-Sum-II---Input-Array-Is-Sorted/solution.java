@@ -5,7 +5,7 @@ class Solution {
             for(int j=i+1; j<numbers.length; j++){
                 if((numbers[i]+numbers[j])==target){
                     indices[0]=i+1;
-                    indices[1]=j;
+                    indices[1]=j+i;
                 }
             }
         }
