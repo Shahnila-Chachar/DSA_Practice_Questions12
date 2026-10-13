@@ -7,12 +7,12 @@ class Solution {
             if((numbers[right]+numbers[left])==target){
                 indices[0]=left;
                 indices[1]=right;
-                return indices;
+                
             }
             left++;
             right--;
         }
-        return null;
+        return indices;
         
     }
 }
