@@ -62,7 +62,7 @@ myLinkedList.get(1);              // return 3
 
 - **Language**: Java
 - **Runtime**: 0 ms
-- **Memory**: 41.2 MB
+- **Memory**: 41.3 MB
 
 ---
 
