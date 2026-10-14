@@ -14,6 +14,7 @@ class MyLinkedList {
             if(index == count){
                 return current.val;
             }
+            count++;
             current = current.next;
         }
         return -1;
@@ -50,8 +51,8 @@ class MyLinkedList {
         ListNode newNode = new ListNode(val);
         ListNode current = head;
         if(index==0){
+            newNode.next = head;
             head = newNode;
-            return;
         }
         while(current.next != null){
             if(index==count+1){
@@ -75,7 +76,7 @@ class MyLinkedList {
             head = head.next;
             return;
         }
-        while(current.next != null){
+        while(current.next.next != null){
             if(index==count+1){
                 current.next = current.next.next;
                 return;
