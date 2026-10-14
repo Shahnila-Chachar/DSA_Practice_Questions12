@@ -7,11 +7,10 @@ class Solution {
             totalSum+=nums[i];
             if(leftSum!=rightSum){
                 leftSum+=nums[i];
-                rightSum = totalSum-leftSum-nums[i];
-                if(leftSum==rightSum){
-                    return i;
-                }
-
+            }
+            rightSum = totalSum-leftSum-nums[i];
+            if(leftSum==rightSum){
+                return i;
             }
             
         }
