@@ -7,13 +7,11 @@ class Solution {
             totalSum+=nums[i];
         }    
         for(int i=0; i<nums.length; i++){
-            
             rightSum = totalSum-leftSum-nums[i];
-            leftSum+=nums[i];
             if(leftSum==rightSum){
                 return i;
             }
-            
+            leftSum+=nums[i];
         }
         return -1;
     }
