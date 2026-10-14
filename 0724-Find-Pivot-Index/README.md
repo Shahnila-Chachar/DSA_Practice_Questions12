@@ -60,7 +60,7 @@ Right sum = nums[1] + nums[2] = 1 + -1 = 0
 
 - **Language**: Java
 - **Runtime**: 0 ms
-- **Memory**: 42.4 MB
+- **Memory**: 42.7 MB
 
 ---
 
