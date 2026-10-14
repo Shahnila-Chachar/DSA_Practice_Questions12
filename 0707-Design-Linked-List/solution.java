@@ -46,26 +46,42 @@ class MyLinkedList {
         
     }
     
-    public void addAtIndex(int index, int val) {
-        int count = 0;
-        ListNode newNode = new ListNode(val);
-        ListNode current = head;
-        if(index==0){
-            newNode.next = head;
-            head = newNode;
+
+public void addAtIndex(int index, int val) {
+    if (index < 0) {
+        return;
+    }
+
+    int count = 0;
+    ListNode newNode = new ListNode(val);
+    ListNode current = head;
+
+    if (index == 0) {
+        newNode.next = head;
+        head = newNode;
+        return;
+    }
+
+    if (current == null) {
+        return;
+    }
+
+    while (current.next != null) {
+        if (index == count + 1) {
+            newNode.next = current.next;
+            current.next = newNode;
             return;
         }
-        while(current.next != null){
-            if(index==count+1){
-                newNode.next = current.next;
-                current.next = newNode;
-                
-                return;
-            }
-            count++;
-            current = current.next;
-        }
+
+        count++;
+        current = current.next;
     }
+
+    // Insert at the end if index equals the list length
+    if (index == count + 1) {
+        current.next = newNode;
+    }
+}
     
     public void deleteAtIndex(int index) {
         int count = 0;
