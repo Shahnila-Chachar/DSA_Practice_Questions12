@@ -44,6 +44,9 @@ Example 3:
 
 ## Solution
 
+
+<img width="1312" height="1199" alt="Merge Two Sorted Lists_ A Visual Guide" src="https://github.com/user-attachments/assets/3f3ce1d9-bfb3-4cab-ba90-bf9e148ecf2c" />
+
 - **Language**: Java
 - **Runtime**: 0 ms
 - **Memory**: 41.8 MB
