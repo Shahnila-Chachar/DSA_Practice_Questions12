@@ -85,7 +85,7 @@ Explanation: The two lists do not intersect, so return null.
 
 - **Language**: Java
 - **Runtime**: 0 ms
-- **Memory**: 42.2 MB
+- **Memory**: 41.5 MB
 
 ---
 
