@@ -14,11 +14,7 @@ class Solution {
             return null;
         }
         while(head != null && head.val == val){
-            if(head.val==val){
-                head=head.next;
-            }
-            
-            
+            head=head.next;
         }
         
         ListNode current = head;
@@ -26,7 +22,9 @@ class Solution {
             if(current.next.val==val){
                 current.next = current.next.next;
             }
-            current = current.next;
+            else{
+                current = current.next;
+            }
         }
         return head;
     }
