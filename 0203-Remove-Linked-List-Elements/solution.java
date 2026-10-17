@@ -15,6 +15,7 @@ class Solution {
         }
         while(head != null && head.val == val){
             head=head.next;
+            return head;
         }
         
         ListNode current = head;
